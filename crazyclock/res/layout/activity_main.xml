@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dcdcdc"
+    android:layout_weight="1" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" 
+            android:background="@drawable/green2"
+       />
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             >
+
+            <LinearLayout
+                android:id="@+id/tab01"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:orientation="vertical" >
+
+                <ListView
+                    android:id="@+id/alarm_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+                </ListView>
+
+                <Button
+                    android:id="@+id/add"
+                    android:layout_width="fill_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/add2"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="18dp"
+                    android:text="+添加闹钟" />
+            </LinearLayout>
+
+           
+
+            <LinearLayout
+                android:id="@+id/tab03"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:textSize="20pt" >
+
+                <ImageView
+                    android:id="@+id/myface"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:paddingTop="30dp"
+                    android:src="@drawable/add" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                   
+                    android:paddingTop="30dp" >
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:paddingLeft="20dp"
+                        android:src="@drawable/count1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:text="账号:"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:paddingLeft="20dp"
+                        android:text="点击绑定新浪微博"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+            <!--     <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="20dp" >
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:paddingLeft="10dp"
+                        android:src="@drawable/set" />
+
+                    <TextView
+                        android:id="@+id/set"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="设置"
+                        android:textSize="15dp" />
+                </LinearLayout>-->
+            </LinearLayout> 
+
+            <LinearLayout
+                android:id="@+id/tab04"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:textSize="11pt" >
+                 <ListView
+                    android:id="@+id/information_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+                </ListView>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</TabHost>

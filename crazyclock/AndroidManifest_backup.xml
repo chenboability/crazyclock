@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.crazyclock"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="14" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon3"
+        android:label="crazyclock"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="crazyclock" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.crazyclock.Atys.add"
+            android:label="添加" >
+        </activity>
+        <activity android:name=".Atys.AlarmActivity" >
+        </activity>
+
+        <receiver android:name=".Atys.alarmReceiver" >
+        </receiver>
+
+        <activity android:name=".tools.FaceActivity" >
+        </activity>
+        <activity android:name=".tools.GetImageActivity" >
+        </activity>
+        <activity android:name=".Atys.BigImage" >
+        </activity>
+
+    </application>
+
+</manifest>

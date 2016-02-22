@@ -1,0 +1,1 @@
+package com.example.crazyclock.wxapi;import com.umeng.socialize.weixin.view.WXCallbackActivity;public class WXEntryActivity extends WXCallbackActivity {}

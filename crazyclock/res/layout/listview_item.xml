@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFED5"
+    android:orientation="horizontal"
+    android:paddingRight="20dp"
+    android:descendantFocusability="blocksDescendants" >
+
+    <TextView
+        android:id="@+id/show_time"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:text="12:25"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/show_ampm"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="3dp"
+        android:paddingTop="20dp"
+        android:text="am"
+        android:textSize="10dp" />
+
+    <View
+        android:id="@+id/view_1"
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:background="#A6A6A6" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingRight="8dp" >
+
+        <TextView
+            android:id="@+id/show_repeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:text="everyday"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/show_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="off"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    <com.example.crazyclock.tools.MySwitch
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:focusable="false"
+        android:textOff="off"
+        android:textOn="on" />
+
+</LinearLayout>
